@@ -1,0 +1,11 @@
+services:
+
+ site_locationtime.getCurrentTimeDate:
+   class: Drupal\site_locationtime\CurrentDateTimeServices
+   arguments: ['@page_cache_kill_switch', '@date.formatter']
+
+ cache_context.timedate_summary:
+    class: Drupal\site_locationtime\CacheContext\TimedateSummaryCacheContext
+    tags:
+      - { name: cache_context }
+    arguments: ['@date.formatter', '@config.factory']

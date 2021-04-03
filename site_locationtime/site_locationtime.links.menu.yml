@@ -1,0 +1,6 @@
+sitelocationtime.admin_settings_form:  
+  title: 'Sitelocationtime Configuration Form'  
+  route_name: sitelocationtime.admin_settings_form  
+  description: 'Sitelocationtime configuration admin'  
+  parent: system.admin_config_system  
+  weight: 99 

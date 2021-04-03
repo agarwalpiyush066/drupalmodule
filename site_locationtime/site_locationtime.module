@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Contains site_locationtime.module.
+ */
+
+ /**
+ * Implements hook_theme().
+ */
+function site_locationtime_theme() {
+    return [
+        'site_locationtime_block'=> [
+        'variables' => array('title' => NULL, 'description' => NULL, 'site_country' => NULL, 'site_city' => NULL, 'site_time_zone' => NULL, 'site_current_time' => NULL, 'site_current_timedate' => NULL,),
+        'template' => 'site-locationtime-block',
+      ],
+    ];
+  }
